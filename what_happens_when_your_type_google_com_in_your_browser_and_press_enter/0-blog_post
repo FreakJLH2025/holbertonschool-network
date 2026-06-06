@@ -1,0 +1,32 @@
+What Really Happens When You Type https://www.google.com and Press Enter
+We use the web every day, but few people stop to think about the complex journey behind a simple action like typing a URL into a browser. Let’s break down the chain of events step by step.
+
+🌐 DNS Request
+When you type www.google.com, your browser first needs to know the IP address of Google’s servers. It sends a DNS query to resolve the domain name into an IP address. DNS acts like the Internet’s phonebook, translating human‑friendly names into machine‑friendly numbers.
+
+📡 TCP/IP
+Once the IP address is known, your computer establishes a connection using TCP/IP. TCP ensures reliable delivery of data packets, while IP handles addressing and routing across the network.
+
+🔒 Firewall
+Before traffic reaches Google, it passes through multiple firewalls. Firewalls filter traffic, blocking malicious requests and allowing only legitimate communication to proceed.
+
+🔐 HTTPS/SSL
+The browser then initiates a secure handshake using HTTPS and an SSL certificate. This encrypts the communication, ensuring that sensitive data (like search queries) cannot be intercepted or altered.
+
+⚖️ Load Balancer
+Google operates at massive scale. Incoming requests first hit a load balancer, which distributes traffic across multiple servers. This prevents overload and ensures high availability.
+
+🖥️ Web Server
+The request is then handled by a web server (such as Google’s custom infrastructure). The web server manages HTTP requests, serves static content, and forwards dynamic requests to the application layer.
+
+⚙️ Application Server
+The application server processes the logic behind your request. For Google, this means running search algorithms, applying personalization, and preparing the results page.
+
+🗄️ Database
+Finally, the application server queries Google’s massive databases. These databases store indexed web pages, user data, and other information needed to generate accurate search results.
+
+🚀 Response Back to You
+The results are packaged into an HTML response, sent back through the same chain (application → web server → load balancer → encrypted HTTPS → firewall → TCP/IP → your browser). Your browser renders the page, and you see Google’s familiar search interface.
+
+📌 Why This Matters
+This journey highlights the layered complexity of modern web infrastructure. Each component—DNS, TCP/IP, firewalls, HTTPS, load balancers, web servers, application servers, and databases—plays a vital role in making the web fast, secure, and reliable.
